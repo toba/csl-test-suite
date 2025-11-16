@@ -4,10 +4,10 @@ citation
 
 
 >>==== DESCRIPTION ====>>
+
 This depends on correct handling of seasons expressed in month parts per the
 discussion at
 https://discourse.citationstyles.org/t/edtf-and-date-representation/1663
-
 
 Additionally, it depends on further, special handling for month values 17 and
 18 per the code comment at
