@@ -4,16 +4,22 @@ bibliography
 
 >>==== DESCRIPTION ====>>
 
-This depends on two processor implementation details:
+This depends on
 
-1. outputting an exact error message when a style produces no output for a
-   reference, and
+1. identifying when citation-number is used,
 
-2. temporarily ignoring <choose/> conditions to find and render
-   <text variable="citation-number"/>, if defined, for the omitted reference.
+2. outputting a particular error message in place of a reference that produces
+   no output, to maintain citation-number sequencing, and
+
+2. rendering the <bibliography/> <text variable="citation-number"/>
+   for the omitted reference, ignoring the conditions that omitted the
+   reference.
 
 For an implementation example, see
 https://github.com/zotero/citeproc-rs/blob/master/crates/proc/src/db.rs#L1414
+
+Compare to the sort_OmittedBibRefNonNumericStyle test which has a similar
+non-rendering reference but no citation-numbers.
 
 <<==== DESCRIPTION ====<<
 
